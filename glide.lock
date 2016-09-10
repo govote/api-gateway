@@ -1,0 +1,53 @@
+hash: ff5995575609242dcc7419a8629983f257289278ec59edc7c44946fa9ce29ae8
+updated: 2016-07-06T14:29:38.1411373-03:00
+imports:
+- name: github.com/joho/godotenv
+  version: 4ed13390c0acd2ff4e371e64d8b97c8954138243
+  subpackages:
+  - github.com\joho\godotenv
+- name: github.com/labstack/echo
+  version: 451b2ccc9ffda7fd7fad2027b75d93b18ff87cbe
+  subpackages:
+  - github.com\labstack\echo\engine\standard
+  - github.com\labstack\echo
+  - github.com\labstack\echo\engine
+  - github.com\labstack\echo\log
+- name: github.com/labstack/gommon
+  version: 722aa12d41c236ce78ff48eac1cafe0107ecdc9d
+  subpackages:
+  - github.com\labstack\gommon\log
+  - github.com\labstack\gommon\color
+- name: github.com/mattn/go-colorable
+  version: 9056b7a9f2d1f2d96498d6d146acd1f9d5ed3d59
+  subpackages:
+  - github.com\mattn\go-colorable
+- name: github.com/mattn/go-isatty
+  version: 56b76bdf51f7708750eac80fa38b952bb9f32639
+  subpackages:
+  - github.com\mattn\go-isatty
+- name: github.com/moul/http2curl
+  version: b1479103caacaa39319f75e7f57fc545287fca0d
+  subpackages:
+  - github.com\moul\http2curl
+- name: github.com/parnurzeal/gorequest
+  version: 6e8ad4ebdee4bec2934ed5afaaa1c7b877832a17
+  subpackages:
+  - github.com\parnurzeal\gorequest
+- name: github.com/valyala/fasttemplate
+  version: 3b874956e03f1636d171bda64b130f9135f42cff
+  subpackages:
+  - github.com\valyala\fasttemplate
+- name: github.com/vitorsalgado/la-democracia
+  version: 0a717dee8784ec676ba236a7a258758887447732
+  subpackages:
+  - github.com\vitorsalgado\democracia-direta\lib\messages
+- name: golang.org/x/net
+  version: b400c2eff1badec7022a8c8f5bea058b6315eed7
+  subpackages:
+  - golang.org\x\net\context
+  - golang.org\x\net\publicsuffix
+- name: golang.org/x/sys
+  version: a408501be4d17ee978c04a618e7a1b22af058c0e
+  subpackages:
+  - golang.org\x\sys\unix
+devImports: []

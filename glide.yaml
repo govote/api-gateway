@@ -1,0 +1,6 @@
+package: github.com/vitorsalgado/la-democracia/gateway
+import:
+- package: github.com/joho/godotenv
+- package: github.com/labstack/echo
+- package: github.com/parnurzeal/gorequest
+- package: github.com/moul/http2curl
