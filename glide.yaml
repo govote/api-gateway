@@ -4,3 +4,6 @@ import:
 - package: github.com/labstack/echo
 - package: github.com/parnurzeal/gorequest
 - package: github.com/moul/http2curl
+- package: github.com/dimiro1/banner
+- package: gopkg.in/caarlos0/env.v2
+- package: github.com/asaskevich/govalidator

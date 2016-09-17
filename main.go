@@ -2,26 +2,26 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"os"
 
-	"github.com/joho/godotenv"
+	"github.com/deputadosemfoco/api-gateway/config"
+	"github.com/deputadosemfoco/api-gateway/routes"
+	"github.com/dimiro1/banner"
 	"github.com/labstack/echo/engine/standard"
-	"github.com/vitorsalgado/la-democracia/gateway/routes"
 )
 
 func main() {
-	err := godotenv.Load()
+	config.Init()
 
-	if err != nil {
-		log.Fatalf("%s : %s", "Error loading .env file", err)
-	}
+	in, _ := os.Open("banner.txt")
+	defer in.Close()
+	banner.Init(os.Stdout, true, false, in)
 
-	router := routes.Router{}
-	e := router.SetUp()
-	port := os.Getenv("Gateway_Port")
+	e := routes.SetUp()
+	port := os.Getenv("PORT")
 
-	fmt.Printf("gateway service running on port %s", port)
+	fmt.Printf("gateway service will run on port %s", port)
+	fmt.Println("")
 
 	e.Run(standard.New(":" + port))
 }
